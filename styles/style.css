@@ -148,6 +148,10 @@ html {
   flex-direction: column;
 }
 
+.card-link {
+  text-decoration: none;
+}
+
 .card_type_film {
   background: url('../images/card-lot-01.jpg') no-repeat center / cover;
 }
@@ -161,8 +165,8 @@ html {
 }
 
 .card__info {
-  position: relative;
   z-index: 2;
+  position: relative;
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
