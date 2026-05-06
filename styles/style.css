@@ -14,18 +14,19 @@ html {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 96px 50px;
+  padding: 92px 50px;
 }
 
 .header__links-list {
   display: flex;
-  gap: 30px;
+  gap: 32px;
   list-style: none;
   list-style-type: circle;
 }
 
 .header__links-list-item {
   text-transform: lowercase;
+  line-height: 24px;
 }
 
 .header__links-list-item_no-bullit {
@@ -37,12 +38,14 @@ html {
 }
 
 .header__logo-image {
-  min-width: 105px;
+  min-width: 136px;
 }
 
 .address {
-  max-width: 240px;
+  min-width: 240px;
   font-style: normal;
+  line-height: 24px;
+  text-underline-offset: 4px;
 }
 
 .header__address {
@@ -71,24 +74,25 @@ html {
   font-size: 100px;
   text-transform: uppercase;
   color: white;
-  letter-spacing: 40px;
+  letter-spacing: 30px;
 }
 
 .aligned-text_left {
   text-align: left;
-  margin-top: 165px; 
+  margin-top: 165px;
   margin-left: 50px;
 }
 
 .aligned-text_center {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 17px;
+  margin-left: 30px;
 }
 
 .aligned-text_right {
   text-align: right;
-  margin-top: 20px;
-  margin-right: 10px;
+  margin-top: 18px;
+  margin-right: 20px;
 }
 
 .cover__description {
@@ -99,7 +103,7 @@ html {
 
 .cover__description-text {
   align-self: center;
-  word-spacing: 30px;
+  word-spacing: 19px;
   font-size: 22px;
   color: white;
   text-transform: uppercase;
@@ -109,17 +113,16 @@ html {
   background: transparent;
   color: white;
   border: 1px solid white;
-  padding: 12px 32px;
-  cursor: pointer;
-  font-size: 16px;
   border-radius: 0;
+  padding: 11px 32px;
+  cursor: pointer;
   font-size: 22px;
   text-transform: uppercase;
 }
 
 .lots {
   margin-top: 180px;
-  padding: 24px 0px 24px;
+  padding: 0px 24px;
 }
 
 .lots__heading {
@@ -180,22 +183,27 @@ html {
 
 .more {
   margin: 30px 0px 0px 40px;
+}
+
+.more__link {
   font-weight: 400;
-  font-size: 20px;
   color: black;
   text-transform: lowercase;
+  font-size: 20px;
+  text-underline-offset: 4px;
 }
 
 .about {
   margin-top: 120px;
+  margin-left: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1f;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .about__logo {
   grid-column: 1;
-  grid-row: 1/2;
+  grid-row: 1;
   position: relative;
   width: 240px;
   height: 240px;
@@ -232,10 +240,16 @@ html {
 }
 
 .footer {
-  margin-top: 180px;
+  margin-top: 150px;
   display: flex;
   justify-content: space-between;
   padding: 0px 50px 82px 50px;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer__menu-list {
@@ -247,6 +261,7 @@ html {
 
 .footer__menu-list-item {
   text-transform: lowercase;
+  text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {
