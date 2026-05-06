@@ -42,6 +42,7 @@ html {
 }
 
 .address {
+  display: flex;
   min-width: 240px;
   font-style: normal;
   line-height: 24px;
@@ -50,7 +51,6 @@ html {
 
 .header__address {
   justify-self: end;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -143,7 +143,9 @@ html {
 .card {
   position: relative;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card_type_film {
@@ -159,12 +161,13 @@ html {
 }
 
 .card__info {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  z-index: 2;
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
 }
 
 .card__title {
@@ -247,7 +250,6 @@ html {
 }
 
 .footer__address {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
